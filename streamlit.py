@@ -12,7 +12,7 @@ import seaborn as sns
 
 import streamlit as st
 
-penguins_file = st.file_uploader('CArrega os dados:')
+penguins_file = st.file_uploader('Caso queira, carregue os dados:')
 if penguins_file is None:
     with open('model.pkl', 'rb') as file:
         modelo = pickle.load(file)
