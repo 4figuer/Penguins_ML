@@ -10,7 +10,9 @@ import time
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-import streamlit as st
+password_guess  = st.text_input('Qual a senha para acessar?')
+if password_guess != '12345':
+    st.stop()
 
 penguins_file = st.file_uploader('Caso queira, carregue os dados:')
 if penguins_file is None:
